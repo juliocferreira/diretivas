@@ -28,7 +28,15 @@ export class FormularioComponent implements OnInit {
       return;
     }
 
-    this.usuarios.push(usuario);
+    let userSaved = Object.assign({},usuario);
+
+    this.usuarios.push(userSaved);
+
+    this.usuario = {
+      endereco: {
+
+      }as Endereco
+    } as Usuario
   }
 
 
