@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <div class="title">
+        <h1>Exemplo *ngIf</h1>
+      </div>
+      <select class="form-control" [(ngModel)]="style">
+        <option value="" selected disabled>Escolha uma opção</option>
+        <option value="danger">Danger</option>
+        <option value="warning">Warning</option>
+        <option value="success">Success</option>
+      </select>
+      <div class="alert alert-danger" *ngIf="style == 'danger'">
+        Entrou no danger
+      </div>
+      <div class="alert alert-warning" *ngIf="style == 'warning'">
+        Entrou no warning
+      </div>
+      <div class="alert alert-success" *ngIf="style == 'success'">
+        Entrou no success
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="title">
+        <h1>Exemplo *ngIf</h1>
+      </div>
+      <button class="btn btn-primary" (click)="show()">
+        Mostrar livro
+      </button>
+      <br /><br />
+      <div *ngIf="showBook">
+        <img class="img-thumbnail"
+          src="https://www.pambazuka.org/sites/default/files/field/image/EW_Harry-Potter_Featured.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template [ngIf]="showBook">
+  <div> <img class="img-thumbnail"
+      src="https://www.pambazuka.org/sites/default/files/field/image/EW_Harry-Potter_Featured.jpg" alt=""></div>
+</ng-template>
+
+<div ng-template="ngIf showBook">
+  <img class="img-thumbnail"
+    src="https://www.pambazuka.org/sites/default/files/field/image/EW_Harry-Potter_Featured.jpg" alt="">
+</div>

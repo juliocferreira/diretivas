@@ -1,0 +1,13 @@
+<div class="col-4">
+  <button class="btn" [class.btn-danger]="!meuFavorito" [class.btn-success]="meuFavorito" (click)="onClick()">
+    Botão com property binding
+  </button>
+</div>
+<br/>
+<div class="col-4">
+  <button class="btn" [ngClass]="{
+      'btn-danger': !meuFavorito,
+      'btn-success': meuFavorito
+    }" (click)="onClick()">
+    Botão com ngClass</button>
+</div>
