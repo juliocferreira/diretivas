@@ -5,7 +5,7 @@
         <h1>Exemplo *ngIf</h1>
       </div>
       <select class="form-control" [(ngModel)]="style">
-        <option value="" selected disabled>Escolha uma opção</option>
+        <option value="" selected >Escolha uma opção</option>
         <option value="danger">Danger</option>
         <option value="warning">Warning</option>
         <option value="success">Success</option>
@@ -35,7 +35,7 @@
     </div>
   </div>
 </div>
-<ng-template [ngIf]="showBook">
+<!-- <ng-template [ngIf]="showBook">
   <div> <img class="img-thumbnail"
       src="https://www.pambazuka.org/sites/default/files/field/image/EW_Harry-Potter_Featured.jpg" alt=""></div>
 </ng-template>
@@ -43,4 +43,4 @@
 <div ng-template="ngIf showBook">
   <img class="img-thumbnail"
     src="https://www.pambazuka.org/sites/default/files/field/image/EW_Harry-Potter_Featured.jpg" alt="">
-</div>
+</div> -->

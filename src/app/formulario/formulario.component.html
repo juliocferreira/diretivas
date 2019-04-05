@@ -1,0 +1,47 @@
+<div class="col-8 center">
+  <div class="card">
+    <div class="card-header">
+      <h3>Cadasto de usuários</h3>
+    </div>
+    <div class="card-body">
+      <h5 class="subtitle">Dados pessoais</h5>
+      <br />
+      <div class="row">
+        <div class="col-8">
+          <label for="nome">Nome*</label>
+          <input type="text" name="nome" id="nome" [(ngModel)]="usuario.nome" class="form-control" placeholder="Nome" />
+        </div>
+        <div class="col-4">
+          <label for="idade">Idade*</label>
+          <input type="text" name="idade" id="idade"  [(ngModel)]="usuario.idade" class="form-control" placeholder="Idade" />
+        </div>
+      </div>
+      <hr />
+      <h5 class="subtitle">Endereço</h5>
+      <br />
+      <div class="row">
+        <div class="col-8">
+          <label for="rua">Rua*</label>
+          <input type="text" name="rua" id="rua" [(ngModel)]="usuario.endereco.rua" class="form-control" placeholder="Rua" />
+        </div>
+        <div class="col-4">
+          <label for="numero">Numero*</label>
+          <input type="text" name="numero" id="numero" [(ngModel)]="usuario.endereco.numero" class="form-control" placeholder="Numero" />
+        </div>
+      </div>
+      <br/><br/>
+      <hr/>
+      <div class="row">
+        <div class="col-6">
+          <button class="btn btn-primary btn-block" (click)="salvarUsuario(usuario)">Salvar</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-secondary btn-block">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="jumbotron">
+    {{ usuarios | json }}
+  </div>
+</div>

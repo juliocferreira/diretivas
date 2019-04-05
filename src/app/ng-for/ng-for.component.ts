@@ -9,7 +9,30 @@ export class NgForComponent implements OnInit {
 
   constructor() { }
   
-  cursos: string[] = ["Angular 2", "Go Lang", "AWS"];
+  cursos: any[] = [{
+    nome: "Java",
+    local: {
+      rua: "Prazeres",
+      gps: {
+        long: 0.0992039309,
+        lat: 0.938474848
+      }
+    }
+  }, {
+    nome: "Go Lang"
+  }, {
+    nome: "AWS",
+    local: {
+      rua: "Rua do apolo",
+      numero: 300
+    }
+  }, {
+    nome: "Angular +",
+    local: {
+      rua: "Av barbosa lima",
+      numero: 100
+    }
+  }];
 
   ngOnInit() {
   

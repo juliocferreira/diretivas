@@ -1,7 +1,11 @@
 <div class="col-4">
   <h5>Styles com property binding (style binding)</h5>
-  <button class="btn btn-light" [style.backgroundColor]="ativo ? 'blue' : 'gray'" [style.color]="ativo ? 'white' : 'black'"
-    [style.fontWeight]="ativo ? 'bold' : 'normal'" [style.fontSize]="tamanhoFonte + 'px'" (click)="mudarAtivo()">
+  <button class="btn btn-light" 
+  [style.backgroundColor]="ativo ? 'blue' : 'gray'" 
+  [style.color]="ativo ? 'white' : 'black'"
+    [style.fontWeight]="ativo ? 'bold' : 'normal'" 
+    [style.fontSize]="tamanhoFonte + 'px'" 
+    (click)="mudarAtivo()">
     Mudar atributo 'ativo'
   </button>
 </div>

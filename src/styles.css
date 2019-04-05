@@ -1,3 +1,8 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+
+.center {
+    float: none;
+    margin: 0 auto;
+}

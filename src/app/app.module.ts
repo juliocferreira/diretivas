@@ -9,6 +9,7 @@ import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
+import { FormularioComponent } from './formulario/formulario.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
     NgSwitchComponent,
     NgForComponent,
     NgClassComponent,
-    NgStyleComponent
+    NgStyleComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
