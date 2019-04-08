@@ -3,6 +3,7 @@ import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
 @Directive({
   selector: '[ngElse]'
 })
+//exemplo de diretiva estrutural
 export class NgElseDirective {
 
   @Input() set ngElse(condition: boolean){
