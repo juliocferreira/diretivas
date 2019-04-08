@@ -10,6 +10,11 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { NgContentComponent } from './ng-content/ng-content.component';
+import { AlteraBackgroundDirective } from './shared/altera-background.directive';
+import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
+import { HighlightDirective } from './shared/highlight.directive';
+import { NgElseDirective } from './shared/ng-else.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +23,12 @@ import { FormularioComponent } from './formulario/formulario.component';
     NgForComponent,
     NgClassComponent,
     NgStyleComponent,
-    FormularioComponent
+    FormularioComponent,
+    NgContentComponent,
+    AlteraBackgroundDirective,
+    DiretivasCustomizadasComponent,
+    HighlightDirective,
+    NgElseDirective
   ],
   imports: [
     BrowserModule,

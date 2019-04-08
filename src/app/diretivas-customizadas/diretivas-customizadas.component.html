@@ -1,0 +1,26 @@
+<!-- Usando diretiva de atributos customizada-->
+<p alteraBackground>
+  Texto com fundo azul.
+</p>
+
+<p highlight>
+  Texto com highlight quando passo o mouse.
+</p>
+<!-- Usando diretiva de atributos customizada, com o uso de Input Property e HostListener e HostBinding-->
+<p highlight [highlightColor]="'red'">
+  Texto com highlight quando passo o mouse.
+</p>
+
+
+<button class="btn btn-primary" (click)="show()">
+  Mostrar livro
+</button>
+<br /><br />
+<div *ngIf="showBook">
+  <img class="img-thumbnail"
+    src="https://www.pambazuka.org/sites/default/files/field/image/EW_Harry-Potter_Featured.jpg" alt="">
+</div>
+<div *ngElse="showBook">
+  <img class="img-thumbnail"
+    src="https://www.pambazuka.org/sites/default/files/field/image/EW_Harry-Potter_Featured.jpg" alt="">
+</div>
