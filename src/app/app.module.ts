@@ -15,6 +15,7 @@ import { AlteraBackgroundDirective } from './shared/altera-background.directive'
 import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
 import { HighlightDirective } from './shared/highlight.directive';
 import { NgElseDirective } from './shared/ng-else.directive';
+import { FormatDateDirective } from './shared/format-date.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { NgElseDirective } from './shared/ng-else.directive';
     AlteraBackgroundDirective,
     DiretivasCustomizadasComponent,
     HighlightDirective,
-    NgElseDirective
+    NgElseDirective,
+    FormatDateDirective
   ],
   imports: [
     BrowserModule,

@@ -22,7 +22,7 @@ export class AlteraBackgroundDirective {
     this._renderer.setElementStyle(
       this._elementRef.nativeElement,
       'color',
-      'white'
+      'red'
     );
   }
 }
